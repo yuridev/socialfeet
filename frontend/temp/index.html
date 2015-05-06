@@ -4,15 +4,25 @@
 		<title>My index</title>
 		<!-- inject:css -->
 		<!-- endinject -->
+        
+      
+
 	</head>
-	<body>
-		<!-- vendorInject:js -->
-		<script src="vendor/angular.js"></script>
-		<!-- endinject -->
+	<body ng-controller="Login">
+		
+        <!-- vendorInject:js -->
+        <script src="vendor/angular.js"></script>
+        <script src="vendor/satellizer.js"></script>
+        <!-- endinject -->
+        
+        <!-- inject:js -->
+        <script src="app.js"></script>
+        <script src="login.js"></script>
+        <!-- endinject -->        
+        <button ng-click="login()">Login</button>
+	
 
-		<!-- inject:js -->
-		<script src="app.js"></script>
-		<!-- endinject -->
 
+        
 	</body>
 </html>
